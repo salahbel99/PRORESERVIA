@@ -142,7 +142,6 @@
 
   /*DESKTOP*/
   @media (min-width: 1024px) {
-    
     #hebergements {
       display: flex;
     }
