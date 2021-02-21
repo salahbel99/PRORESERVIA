@@ -1,0 +1,68 @@
+@import "header.css";
+@import "search.css";
+@import "hebergements.css";
+@import "activity.css";
+
+body {
+  font-family: "Raleway", "Sans serif";
+  margin: 0;
+  padding:0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h3 {
+  margin: 10px 0;
+}
+
+/*FOOTER*/
+.footer {
+  background-color: #F2F2F2;
+  width: 100%;
+}
+.footer_wrapper {
+  display: flex;
+  max-width: 100%;
+  width: 1440px;
+  margin: auto;
+  padding: 0 32px;
+  box-sizing: border-box;
+}
+.footer_wrapper_column {
+  width: 30%;
+  padding: 32px 32px;
+}
+.footer_link {
+  display: block;
+  margin: 16px 0px;
+}
+.footer_link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1023px) {
+  .footer_wrapper {
+    flex-direction: column;
+    padding: 32px;
+  }
+  .footer_wrapper_column {
+    width: 100%;
+    padding: 0;
+    margin: 16px;
+  }
+  .footer_wrapper_olumn:first-child {
+    margin-top: 0;
+  }
+  .footer_wrapper_column:last-child {
+    margin-bottom: 0;
+  }
+  .footer_title {
+    margin: 0;
+  }
+  .footer_link:last-child {
+    margin-bottom: 0;
+  }
+}

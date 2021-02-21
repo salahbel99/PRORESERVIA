@@ -1,0 +1,191 @@
+  .hebergements{
+    padding-right: 32px;
+    border-radius: 24px;
+    background-color: #F2F2F2;
+    display: grid;
+    column-gap: 32px;
+    grid-template-columns: 6fr 3fr;
+  }
+  .hebergements{
+    display: grid;
+    row-gap: 32px;
+    column-gap: 32px;
+  }
+  .hebergements_header {
+    grid-column: 1/-1;
+  }
+  .hebergements_title {
+    margin: 0;
+    padding-top: 30px;
+  }
+  .hebergements_card {
+    background-color: white;
+    padding: 6px;
+    border-radius: 20px;
+    box-shadow: 0 0 16px #0000002e;
+    transition-duration: 0.1s;
+    cursor: pointer;
+    box-sizing: border-box;
+    height: 200px;
+  }
+  .hebergements_card:hover {
+    transform: scale(1.02);
+  }
+  .card_figure {
+    margin: 0;
+  }
+  .card_figure_img {
+    height: 112px;
+    object-fit: cover;
+    max-width: 100%;
+    width: 100%;
+    max-height: 100%;
+    border-radius: 16px 16px 0 0;
+  }
+  .card_figcaption_title {
+    margin: 4px 12px 0 12px;
+  }
+  .card_desc {
+    margin: 4px 12px 4px 12px;
+  }
+  .card_desc_price {
+    font-weight: bold;
+  }
+  .card_ratings {
+    margin: 4px 12px 4px 12px;
+  }
+  .fa-star {
+    color: #0065FC;
+  }
+  .card_rating_icon-disabled {
+    color: #d9d9d9;
+  }
+  .view_more {
+    font-weight: bold;
+    margin: 0 10px;
+    margin-bottom: 50px;
+  }
+
+  /*POPULAR*/  
+  .hebergements_popular{
+    background-color: #F2F2F2;
+    border-radius: 24px;
+    padding: 32px;
+    margin-bottom: 25px;
+    display: grid;
+    row-gap: 32px;
+    align-items: start;
+    grid-template-rows: auto repeat(3, 1fr);
+  }
+  .popular_title {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .popular_link {
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+    overflow: auto;
+  }
+  .popular_img {
+    position: relative;
+    min-height: 100%;
+    width: 33%;
+    min-width: 33%;
+    max-width: 33%;
+  }
+  .popular_img-img {
+    border-radius: 16px 0 0 16px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .popular_card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .popular_card_title{
+    padding-left: 10px;
+  }
+  .popular_main {
+    height: 140px;
+    flex-direction: row; 
+    background-color: #fff; 
+    border-radius: 24px; 
+    border: 5px solid #fff; 
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2); 
+    transition-duration: 0.1s; 
+  }
+
+  /*MOBILE*/
+  @media (max-width: 1440px) {
+    .hebergements {
+      grid-template-columns: 1fr;
+      row-gap: 32px;
+    }
+    
+    .hebergements_popular {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto 160px;
+      column-gap: 32px;
+      grid-row-start: 1;
+    }
+  
+    .popular_title {
+      grid-column: 1/-1;
+    }
+  }
+
+  /*DESKTOP*/
+  @media (min-width: 1024px) {
+    
+    #hebergements {
+      display: flex;
+    }
+    
+    .hebergements {
+      padding-left: 32px;
+      width: 60%;
+      margin: 0 20px 0 0;
+      grid-template-columns: repeat(3, 1fr);
+      height: 680px;
+    }
+    .hebergements_popular {
+      display: flex;
+      flex-direction: column;
+      height: 680px;
+      box-sizing: border-box;
+    }
+    
+    .popular_main {
+      width: 100%;
+    }
+    .card_figcaption_title{
+      margin: 4px 12px 0 12px;
+    }
+
+  }
+  /*MOBILE*/
+  @media (max-width: 1023px) {
+    #hebergements {
+      display: flex;
+      flex-direction: column;
+    }
+    .hebergements {
+      order: 2;
+      grid-template-columns: 1fr;
+      padding-left: 32px;
+      
+    }
+
+    .hebergements_popular {
+      padding-left: 30px;  order: 1;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto repeat(3, 144px);
+    }
+  }
+  
